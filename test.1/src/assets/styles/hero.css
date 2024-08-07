@@ -43,13 +43,14 @@
     height: 100px;
     width: 13px;
     border: solid;
+    border-radius: 10px;
     background-color: var(--darkSecondary);
     left: 50%;
     position: absolute;
     top: 50%;
     z-index: 2;
 }
-.grass-l{
+/* .grass-l{
     background-repeat: no-repeat;
     background-image: var(--grass-l);
     height: 100px;
@@ -71,7 +72,7 @@
     top: 55%;
     z-index: 1;
     opacity:calc(.65) ;
-}
+} */
 
 /* Desktop Resolution - 1024px */
 @media only screen and (min-width: 64rem) {
