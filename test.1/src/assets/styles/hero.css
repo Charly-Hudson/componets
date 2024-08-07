@@ -12,6 +12,7 @@
     background-size: cover;
     background-position:top;
     overflow: hidden;
+    z-index: 1;
 }
 
 .text-handler{
