@@ -5,7 +5,12 @@
 }
 
 .spacer{
-    height: 80px;
-    width: 100%;
-    background-image: var(--spacer);
+    margin-top: 2000px;
+    /* background-image: var(--spacer); */
+    /* background-image: var(--spacerImage); */
+    background-image: url('/test.1/src/assets/image/spacer-Thumbnail.jpg');
+}
+.spacer img{
+    margin-top: 0px;
+    width: 55px;
 }

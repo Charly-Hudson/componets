@@ -5,11 +5,11 @@
 }
 
 .splooge{
+    width: 100%;
+    height: 100vh;
     background-image: var(--sploogeImage);
     background-repeat: repeat-x;
-    background-position: bottom;
     position: fixed;
-    width: 100%;
-    height: 100%;
+    background-position: bottom;
     z-index: 8;
 }
