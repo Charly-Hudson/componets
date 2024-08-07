@@ -1,0 +1,61 @@
+@import url("global/global.css");
+@import url("https://fonts.cdnfonts.com/css/seven-monkey-fury-bb");
+@import url("https://fonts.cdnfonts.com/css/gabardina");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+/* Desktop Resolution - 1024px */
+@media only screen and (min-width: 64rem) {
+  .nav-bar {
+    width: 94%;
+    max-width: 90rem;
+    height: 6rem;
+    /* 12px - 24px */
+    padding: clamp(0.75rem, 2vw, 1.5rem) 0;
+    /* this stops the padding from affecting the height and width */
+    box-sizing: border-box;
+    background-color: (--primary);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* 12px - 24px */
+    border-radius: clamp(0.75rem, 2vw, 1.5rem);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    z-index: 10000;
+    transform: translateX(-50%);
+    transition:
+      top 0.3s,
+      border-radius 0.3s,
+      width 0.3s,
+      max-width 0.3s;
+  }
+  .nav-container {
+    width: 90%;
+    max-width: 90%;
+    margin: auto;
+    padding: 0 2;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-logo {
+    align-items: start;
+    margin-right: 0;
+  }
+}
+
+/* Tablet Resolution 768px */
+@media only screen and (min-width: 48rem) {
+}
+
+/* Mobile Resolution 1023px */
+@media only screen and (max-width: 63.9375rem) {
+}

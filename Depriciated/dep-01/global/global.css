@@ -1,0 +1,49 @@
+@import url("https://fonts.cdnfonts.com/css/seven-monkey-fury-bb");
+@import url("https://fonts.cdnfonts.com/css/gabardina");
+@import url("NavBar/navbar.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+:root {
+  /* Global styles */
+  --primary: #025028;
+  --darkPrimary: #9ce3bf;
+  --secondary: #4d3d2a;
+  --darkSecondary: #f2d1a5;
+  --headerColor: #220f0f;
+  --bodyTextColor: #e2b3b3;
+  --bodyTextColorLight: #757575;
+  /* 13px - 16px */
+  --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+  /* 31px - 49px */
+  --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  --bodyFontSize: 1rem;
+  /* 60px - 100px top and bottom */
+  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  --headingFont: "Seven Monkey Fury BB", sans-serif;
+  --standardFont: "Gabardina", sans-serif;
+  --nav-logo: "assets/image/webp/navLogo.webp";
+}
+
+body {
+  font-family: (--standardFont);
+  background-color: (--darkSecondary);
+  font-size: (var(--bodyFontSize));
+}
+
+/* Desktop Resolution - 1024px */
+@media only screen and (min-width: 64rem) {
+}
+
+/* Tablet Resolution 768px */
+@media only screen and (min-width: 48rem) {
+}
+
+/* Mobile Resolution 1023px */
+@media only screen and (max-width: 63.9375rem) {
+}
