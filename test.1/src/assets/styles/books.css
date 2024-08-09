@@ -1,0 +1,138 @@
+.books-container{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.box-out {
+    z-index: -99;
+    width: 720px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 140px;
+}
+
+.box-inner {
+    /* display: none; */
+    z-index: 99;
+    width: 900px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    position: absolute;
+    top: 350px;
+    overflow: hidden;
+    background-color: var(--primaryDark);
+}
+
+.book {
+    width: 180px;
+    height: 255px;
+    background-color: var(--secondary);
+    transition: all .3s ease-in-out;
+    transform-origin: left center 0px;
+    transform-style: preserve-3d;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.box-out .book::after {
+    content: " ";
+    display: block;
+    opacity: 0;
+    width: 180px;
+    height: 255px;
+    position: relative;
+    left: 8px;
+    transition: all .3s ease;
+}
+
+.box-out .book::before {
+    content: " ";
+    z-index: 999;
+    display: block;
+    width: 20px;
+    height: 100px;
+    opacity: 0;
+    position: absolute;
+    top: -12px;
+    right: 8px;
+    transition: all .25s;
+    background: var(--bookMark);
+    background-size: 16px;
+    background-repeat: no-repeat;
+}
+
+/*------ background-pic ------*/
+
+.books-1 {
+    background: var(--book-1);
+    background-size: 180px 255px;
+}
+
+.books-2 {
+    background: var(--book-2);
+    background-size: 180px 255px;
+}
+
+.books-3 {
+    background: var(--book-3);
+    background-size: 180px 255px;
+}
+
+/* ----- book-blur ----- */
+
+.book-blur {
+    filter: blur(30px)
+}
+
+.box-inner .book {
+    margin-left: 90px;
+    position: relative;
+    top: -194px;
+}
+
+/* ----- hover ----- */
+
+.book:hover {
+    cursor: pointer;
+    transform: rotateY(-28deg) rotateZ(-2deg) scale(1.02);
+    -webkit-backface-visibility: hidden;
+    box-shadow: 1px 3px 2px #353d85, 20px 8px 0 #525dc4;
+    /* transform: scale(1.02); */
+}
+
+.book:hover::after {
+    content: " ";
+    display: block;
+    opacity: 1;
+    width: 172px;
+    height: 255px;
+    position: relative;
+    left: 8px;
+    background: linear-gradient(-180deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 0) 60%);
+}
+
+.book:hover::before {
+    transform: translateY(9px);
+    opacity: 1;
+  
+}
+
+.dr {
+position: absolute;
+  bottom: 16px; 
+  right: 16px;
+  width:100px;
+}
