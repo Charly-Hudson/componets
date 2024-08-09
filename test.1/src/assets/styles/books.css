@@ -1,10 +1,17 @@
+.book-shelf-container-wrapper{
+    margin-bottom: 0;
+    box-sizing: border-box;
+    border: solid;
+    border-color: red;
+    height: fit-content;
+}
 .books-container{
     width: 100%;
     height: fit-content;
-    position: absolute;
+    position: relative;
 }
 
-.container {
+.book-shelf {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,18 +25,16 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 140px;
+    top: var(--bookSpacing);
 }
 
 .box-inner {
-    /* display: none; */
-    z-index: 99;
+    /* z-index: 99; */
     width: 900px;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     position: absolute;
-    top: 350px;
+    top: var(--bookA);
     overflow: hidden;
     background-color: var(--primaryDark);
 }
@@ -44,6 +49,7 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     overflow: hidden;
 }
 
@@ -109,8 +115,8 @@
     cursor: pointer;
     transform: rotateY(-28deg) rotateZ(-2deg) scale(1.02);
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     box-shadow: 1px 3px 2px #353d85, 20px 8px 0 #525dc4;
-    /* transform: scale(1.02); */
 }
 
 .book:hover::after {

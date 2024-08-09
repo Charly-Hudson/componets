@@ -6,10 +6,10 @@
 
 .splooge{
     width: 100%;
-    height: 100vh;
+    height: 121px;
     background-image: var(--sploogeImage);
     background-repeat: repeat-x;
     position: fixed;
-    background-position: bottom;
+    bottom: 0;
     z-index: 8;
 }

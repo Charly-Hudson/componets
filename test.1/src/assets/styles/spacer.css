@@ -4,13 +4,24 @@
 	box-sizing: border-box;
 }
 
-.spacer{
-    margin-top: 2000px;
-    /* background-image: var(--spacer); */
-    /* background-image: var(--spacerImage); */
-    background-image: url('/test.1/src/assets/image/spacer-Thumbnail.jpg');
+.spacer-inner{
+    height: 150px;
+    width: 100%;
+    background-image: var(--spacerImage);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    box-sizing: border-box;
+    border: 1px solid red;
 }
-.spacer img{
-    margin-top: 0px;
-    width: 55px;
+.spacer{
+    margin-top: 0;
+    width: 100%;
+    height: var(--spacerHeight);
+}
+
+.spacer-2{
+    margin-top: 0;
+    width: 100%;
+    height: var(--spacerHeight);
 }
